@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import joblib, os
+import joblib
+import os
 
 st.set_page_config(
     page_title="🎓 Dean Dilemma – Placement Prediction",
@@ -223,3 +224,4 @@ if st.button("🔮 Predict Placement"):
                 )
         except Exception as e:
             st.error(f"❌ Error during prediction: {e}")
+
