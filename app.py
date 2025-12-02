@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import json
 import os
 
 st.set_page_config(
@@ -224,4 +225,5 @@ if st.button("🔮 Predict Placement"):
                 )
         except Exception as e:
             st.error(f"❌ Error during prediction: {e}")
+
 
